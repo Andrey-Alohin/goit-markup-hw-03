@@ -30,27 +30,6 @@ img {
     padding: 0 15px;
     margin: 0 auto;
 }
-.page-header {
-    border-bottom: 1px solid #e7e9fc;
-}
-.page-header > .container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    /* padding: 24px 0; */
-}
-.header-bar > .logo {
-    margin-right: 70px;
-}
-.header-bar, .header-nav, .contacts-list {
-    display: flex;
-}
-.header-bar, .header-contacts {
-    padding: 24px 0;
-}
-.header-nav, .contacts-list {
-    gap: 40px;
-}
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -60,7 +39,26 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
 }
-.header-bar > .logo > .logo-part{
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+.page-header > .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.header-nav, .nav-list, .contacts-list {
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    margin-right: 76px;
+}
+.nav-list, .contacts-list {
+    gap: 40px;
+}
+
+.header-logo > .logo-part{
     color: #2e2f42;
 }
 .nav-link{
@@ -68,6 +66,8 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: block;
+    padding: 24px 0;
 }
 .header-contacts{
     font-style: normal;
@@ -77,6 +77,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    display: block;
+    padding: 24px 0;
 }
 .nav-link:hover,
 .nav-link:focus,
@@ -95,7 +97,7 @@ img {
     text-align: center;
 }
 .start-screen-title {
-    width: 496px;
+    max-width: 496px;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -112,6 +114,10 @@ img {
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
+    display: block;
+    margin: 0 auto 0 auto;
+    min-width: 169px;
+    cursor: pointer;
 }
 .start-screen-button:hover,
 .start-screen-button:focus {
@@ -150,7 +156,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 .advantages-item-text {
     letter-spacing: 0.02em;
@@ -166,7 +172,7 @@ img {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .our-team-list {
     display: flex;
@@ -175,23 +181,23 @@ img {
 .our-team-item{
     background-color: #fff;
     flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
 }
-.our-team-item img {
-    margin-bottom: 32px;
+.team-item-info {
+    padding: 32px 0;
 }
-.our-team-item-header{
+.team-info-header{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
-.our-team-item-text {
+.team-info-text {
     letter-spacing: 0.02em;
     text-align: center;
-    padding-bottom: 32px;
 }
 .portfolio-title {
     font-weight: 700;
@@ -201,7 +207,7 @@ img {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .portfolio-list {
     display: flex;
@@ -211,11 +217,10 @@ img {
 .portfolio-item {
     flex-basis: calc((100% - 48px) / 3);
 }
-.portfolio-item > img {
-    margin-bottom: 32px;
-}
-.portfolio-item-title, .portfolio-item-text {
-    padding-left: 16px;
+.portfolio-item-info {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .portfolio-item-title {
     font-weight: 500;
@@ -223,24 +228,23 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 .portfolio-item-text {
     letter-spacing: 0.02em;
-    padding-bottom: 32px;
 }
 .bottom-section {
     background-color: #2e2f42;
+    padding: 100px;
 }
-.bottom-section > .container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.logo-bottom {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .bottom-section > .container > .logo > .logo-part{
     color: #f4f4fd;
 }
 .bottom-section-text {
-    padding-top: 16px;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     width: 264px;
